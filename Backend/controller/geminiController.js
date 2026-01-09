@@ -95,7 +95,8 @@ Now, the user is asking: ${message}
 const handleLearn = async (req, res) => {
     try {
         const problemId = parseInt(req.params.problemId);
-        const problems = require('../assest/problems.json');
+        const path = require("path");
+        const problems = require(path.join(__dirname, "../../problems.json"));
         const problem = problems.find(p => p.id === problemId);
         if (!problem) {
             return res.status(404).json({ message: "Problem not found" });
@@ -118,7 +119,7 @@ const handleLearn = async (req, res) => {
 
 const generateLearningPath = async (req, res) => {
     try {
-        const {topic,level, goal} = req.params
+        const { topic, level, goal } = req.params
 
 
         // Prompt for Gemini API
@@ -140,10 +141,12 @@ const generateLearningPath = async (req, res) => {
 // Handler for Editorial
 const handleEditorial = async (req, res) => {
     try {
-        const problemId = parseInt(req.params.problemId);
+        // const problemId = parseInt(req.params.problemId);
         const problems = require('../assest/problems.json');
+        const id = parseInt(problemId, 10);
         const problem = problems.find(p => p.id === problemId);
         if (!problem) {
+            // const problem = problems.find(p => p.id === id);
             return res.status(404).json({ message: "Problem not found" });
         }
 
