@@ -1,37 +1,126 @@
-# CodeClash
+## CodeClash.AI
 
-Welcome to CodeClash, a competitive programming platform designed to help you hone your coding skills.
+Welcome to CodeClash.AI, an AI-powered coding and learning platform designed to help students and developers practice programming while gaining deep conceptual understanding through context-aware Generative AI assistance.
 
-## Architecture
+Unlike traditional coding platforms that focus only on problem-solving, CodeClash.AI integrates AI-driven editorials and an intelligent chatbot directly inside the code editor, transforming coding practice into a guided learning experience.
 
-This project follows a modern client-server architecture:
+⸻
 
-*   **Frontend**: A responsive user interface built with **React** and styled with modern CSS. It is bootstrapped with **Vite** for a fast development experience.
-*   **Backend**: A robust RESTful API powered by **Node.js** and **Express**. It handles business logic, user management, and problem data.
+### Architecture
 
-## Project Structure
+CodeClash.AI follows a modern, scalable client–server architecture with seamless AI integration:
+	•	Frontend: A responsive, component-driven web application built using React, styled with Tailwind CSS, and powered by the Monaco Editor (VS Code editor) for an industry-grade coding experience.
+	•	Backend: A robust RESTful API built with Node.js and Express.js, responsible for authentication, problem management, code execution handling, and AI orchestration.
+	•	AI Layer: Integrated with Gemini AI API to provide:
+	  •	AI Learn editorials (step-by-step explanations & solutions)
+	  •	Context-aware AI chatbot for real-time doubt resolution
+	  •	Intelligent analysis based on problem + user code context
+	•	Database: MongoDB Atlas is used for secure, scalable storage of users, problems, submissions, and AI interaction history.
 
--   [**`/frontend`**](./frontend/README.md): Contains the React frontend application.
--   [**`/Backend`**](./Backend/README.md): Contains the Node.js backend server.
--   [**`/Backend/API_DOCS.md`**](./Backend/API_DOCS.md): Detailed API endpoint documentation.
+⸻
 
-## Project Status
+### Key Features
+	•	🧠 AI Learn – Generates editorials, approaches, and optimized solutions using GenAI
+	•	💬 AI Chatbot – Ask contextual questions about code and logic in real time
+	•	🧑‍💻 Monaco Code Editor – VS Code–like in-browser coding experience
+	•	🔐 JWT Authentication – Secure user login and protected routes
+	•	📊 Progress Tracking – Stores submissions, results, and learning history
+	•	🌐 Fully Web-Based – No extra software or hardware required
 
-*As of August 2025*
+⸻
 
-The project has been successfully initialized and the foundational structure is in place.
+### Project Structure
 
-### Completed
-- ✅ **Project Scaffolding**: Initial setup for both frontend (React/Vite) and backend (Node/Express).
-- ✅ **Version Control**: Git repository initialized with a `main`/`develop` branching strategy.
-- ✅ **Initial Documentation**: Core `README.md` files and API documentation templates have been created.
-- ✅ **Task Management**: Project management guidelines established.
+CodeClash.AI/
+│
+├── frontend/
+│   ├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   └── README.md
+│
+├── backend/
+│   ├── controllers/
+│   ├── routes/
+│   ├── models/
+│   ├── services/
+│   ├── middleware/
+│   └── README.md
+│
+├── backend/API_DOCS.md
+└── README.md
 
-### In Progress
-- ⏳ **User Authentication**: Building the API endpoints and frontend components for user registration and login.
-- ⏳ **Problem Schema**: Defining the database structure for coding problems.
+• /frontend – React-based frontend application
+•	/backend – Node.js & Express backend server
 
-### Next Steps
-- 📝 **Problem List**: Develop the UI to display the list of coding problems.
-- 📝 **Code Editor**: Implement the code editor component for solving problems.
-- 📝 **Submission System**: Build the backend logic to handle code submissions.# CodeClash.AI
+### Tech Stack
+
+#### Frontend
+	•	React.js
+	•	Tailwind CSS
+	•	Monaco Editor
+	•	Axios
+
+#### Backend
+	•	Node.js
+	•	Express.js
+	•	JWT Authentication
+
+#### Database
+	•	MongoDB Atlas
+
+#### AI & GenAI
+	•	Gemini AI API
+	•	Prompt Engineering for contextual responses
+
+#### Tools
+	•	Visual Studio Code
+	•	Postman
+	•	Git & GitHub
+
+⸻
+
+### Project Status
+
+#### As of Jan 2026
+
+The project is actively developed with core features implemented and AI-assisted learning fully integrated.
+
+#### Completed
+	•	✅ Frontend Architecture with React, Tailwind CSS, and Monaco Editor
+	•	✅ Backend REST APIs using Node.js and Express
+	•	✅ JWT-based Authentication & Authorization
+	•	✅ Problem Management System
+	•	✅ AI Learn Feature (Editorials & Solutions via Gemini AI)
+	•	✅ Context-Aware AI Chatbot
+	•	✅ MongoDB Integration for persistent storage
+	•	✅ Clean UI/UX and Modular Code Structure
+
+#### In Progress
+	•	⏳ Multi-language Code Execution Support
+	•	⏳ Advanced Performance Analytics Dashboard
+	•	⏳ Prompt Optimization for AI Accuracy
+
+#### Next Steps
+	•	📝 Adaptive Learning Paths using AI
+	•	📝 Interview Preparation Mode
+	•	📝 Mobile-Friendly Enhancements
+	•	📝 Instructor / Mentor Role Support
+
+⸻
+
+#### Why CodeClash.AI?
+	•	🚀 Reduces context switching by embedding AI directly into the editor
+	•	🧩 Focuses on conceptual clarity, not just problem completion
+	•	🤖 Demonstrates real-world GenAI integration in a production-style web app
+	•	🎓 Ideal for students, self-learners, and interview preparation
+
+### License
+
+This project is developed for educational and portfolio purposes.
+All rights reserved © 2026.
+### Author
+
+Mayank Srivastava
+MCA | Full-Stack Developer | GenAI Enthusiast
