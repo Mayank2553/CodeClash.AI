@@ -47,8 +47,6 @@ CodeClash.AI/
 │   ├── services/
 │   ├── middleware/
 │   └── README.md
-│
-├── backend/API_DOCS.md
 └── README.md
 
 • /frontend – React-based frontend application
